@@ -1,43 +1,108 @@
-# Ex.No.4-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-### DATE:                                                                            
-### REGISTER NUMBER : 
-### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts. Case study 2 with Comparative Analysis Prompt, Universal Prompt, Structures Prompt Refinements and Prompt Size Limitations
+# EXP 4 Scenario-Based Report Development Utilizing Diverse Prompting Techniques- Lab Scenario: Smart Health Assistant System
+### Name: Vijayalakshmi B
+### Reg no: 212222060294
+### **Background**
+MediGuide is an AI-based Smart Health Assistant designed to support elderly patients managing chronic diseases like **diabetes**, **hypertension**, and **arthritis**. It aims to deliver:
+- Personalized health advice
+- Timely medication reminders
+- Daily lifestyle tips
+- Emotional and motivational support
 
-### Explanation - Any one use case from Unit 5 and generate the report for that with the unit 2 Prompt type
-Procedure:
-1.	Define the Scenario and Use Case:
-Scenario:
-The manufacturing industry is looking to reduce manual monitoring and increase efficiency through automation. The system will utilize IoT devices and embedded controllers to automate equipment, monitor performance, and enable predictive maintenance. The goal is to streamline the production process, minimize downtime, and enhance energy efficiency.
-Target Audience:
-Manufacturing companies, specifically in sectors like automotive, electronics, and food processing, where automation can significantly improve productivity.
+To ensure that MediGuide communicates effectively and empathetically, we explore how different **prompting strategies** can optimize its responses across real-world scenarios.
 
+---
 
-Main Objectives:
+### **Objective**
+Demonstrate the application and benefits of five prompting techniques—**zero-shot**, **few-shot**, **chain-of-thought**, **role-based**, and **multi-modal**—in improving MediGuide’s performance across diverse healthcare support tasks.
 
-•	Improve production efficiency by 30%.
-•	Minimize machinery downtime with predictive maintenance.
-•	Enable real-time monitoring and remote control of manufacturing systems.
-•	Reduce energy consumption by optimizing processes.
- 
-2.	Identify Prompt Patterns for Each Design Aspect:
-Idea Generation Prompts:
+---
+## Output
+## **Prompting Techniques & Use Cases**
 
-•	Prompt: “What features can be incorporated into the automation system to optimize production and reduce downtime?” Generated Ideas:
-•	Sensors for real-time monitoring of equipment performance.
-•	Predictive maintenance alerts to anticipate equipment failures.
-•	Energy usage optimization by automating the switching of machines on/off based on demand.
-•	Cloud-based dashboards for remote monitoring and control of machinery.
+### **1. Zero-Shot Prompting**
+**Use Case:** Responding to an unexpected patient query.
 
-Persona and Context Prompts:
+**Prompt:**  
+*"What should I eat for dinner if my blood sugar was high all day?"*
 
-•	Prompt: “What should the user interface and control system convey to the operators and managers?” Generated Context:
-•	The user interface should be intuitive and provide real-time data on machine performance, energy usage, and alerts.
-•	The system should convey reliability and ease of use, with minimal training required for operators.
+**MediGuide Response (Zero-shot):**  
+"Since your blood sugar was high today, consider a low-carbohydrate dinner like grilled chicken with steamed vegetables. Avoid sugary drinks or starchy sides like bread or rice."
 
-Result: The various types of Prompts are executed successfully with generated the report.
+**Benefit:**  
+Quick response without prior examples. Efficient for general knowledge questions or common advice.
 
+---
 
+### **2. Few-Shot Prompting**
+**Use Case:** Providing tailored advice by learning from examples.
 
+**Prompt:**  
+*Example 1:  
+Q: I forgot to take my morning blood pressure pill. What should I do?  
+A: If you're within a few hours, you can still take it. Otherwise, skip it and continue your normal schedule tomorrow.*
 
-# Result: Thus the Prompts were exected succcessfully.
+*Example 2:  
+Q: My knee pain is worse today. Should I still go for a walk?  
+A: If the pain is sharp or swelling, it's best to rest. Gentle stretches can help, but avoid strain.*
 
+*Now:  
+Q: My sugar levels are okay, but I feel dizzy this afternoon. What could be the reason?"*
+
+**MediGuide Response (Few-shot):**  
+"Dizziness can be due to dehydration, fatigue, or blood sugar changes. Drink water, rest, and check your sugar again. If it continues, contact your doctor."
+
+**Benefit:**  
+Improves contextual understanding and response tone by mimicking past examples.
+
+---
+
+### **3. Chain-of-Thought Prompting**
+**Use Case:** Handling complex health reasoning.
+
+**Prompt:**  
+*"Help the user decide if they should take insulin after eating a meal that caused a sugar spike."*
+
+**MediGuide Response (Chain-of-Thought):**  
+"First, let’s understand your situation. You had a high-sugar meal, and your blood sugar has spiked. Next, check how much it has spiked using your glucose monitor. If it's significantly above your usual range, consult your insulin adjustment plan or contact your doctor. If the spike is minor, hydration and light activity may help."
+
+**Benefit:**  
+Encourages step-by-step reasoning, improving clarity and accuracy in medical advice.
+
+---
+
+### **4. Role-Based Prompting**
+**Use Case:** Providing comforting emotional support.
+
+**Prompt:**  
+*"You are a compassionate caregiver. The patient says: 'I feel lonely and tired all the time.' Respond."*
+
+**MediGuide Response (Role-based):**  
+"I'm really sorry you're feeling this way. You're not alone—many people feel this way when dealing with health issues. Would you like me to suggest relaxing activities or breathing exercises to help you feel better? I'm here for you."
+
+**Benefit:**  
+Enhances empathy and emotional intelligence in patient interaction, critical for elder care.
+
+---
+
+### **5. Multi-Modal Prompting**
+**Use Case:** Analyzing visual health data (e.g., diet logs, medication charts).
+
+**Prompt (with uploaded photo of a meal):**  
+*"Is this a good dinner choice for someone with high blood pressure?"*
+**MediGuide Response (Multi-modal):**  
+"From the image, I see baked salmon, broccoli, and brown rice—excellent choices! They're low in sodium and rich in heart-healthy nutrients. Just make sure the portion size is appropriate."
+
+**Benefit:**  
+Combines visual understanding with health knowledge to provide personalized advice.
+
+---
+
+## **Conclusion**
+Using diverse prompting strategies significantly improves the **quality**, **relevance**, and **empathy** of responses in MediGuide. Each technique serves a unique purpose:
+
+- **Zero-shot**: Fast general knowledge retrieval.
+- **Few-shot**: Learns tone and style from prior examples.
+- **Chain-of-thought**: Handles reasoning-heavy decisions.
+- **Role-based**: Offers emotional support effectively.
+- **Multi-modal**: Bridges visual input with tailored advice.
+---
